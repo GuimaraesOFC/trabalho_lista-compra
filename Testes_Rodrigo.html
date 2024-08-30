@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="Teste_Rodrigo_CSS.css">
+</head>
+<body>
+    <div class="container" id="main-container">
+        <!-- Tela Inicial -->
+        <div id="initialScreen">
+            <header>
+                <h1>-vindo ao Sistema de Lista de Compras</h1>
+            </header>
+            <main>
+                <button id="clientBtn">Entrar como Cliente</button>
+                <button id="adminBtn">Entrar como Administrador</button>
+            </main>
+        </div>
+
+        <!-- Tela de Login do Cliente -->
+        <div id="clientLoginScreen" class="hidden">
+            <header>
+                <h1>Login do Cliente</h1>
+                <button id="backToInitialBtn">Voltar</button>
+            </header>
+            <main>
+                <form id="clientLoginForm">
+                    <input type="email" id="loginEmail" placeholder="Email" required>
+                    <input type="password" id="loginPassword" placeholder="Senha" required>
+                    <button type="submit">Entrar</button>
+                </form>
+                <button id="goToRegisterBtn">Criar Conta</button>
+            </main>
+        </div>
+
+        <!-- Tela de Cadastro de Cliente -->
+        <div id="registerScreen" class="hidden">
+            <header>
+                <h1>Cadastro de Cliente</h1>
+                <button id="backToClientLoginBtn">Voltar</button>
+            </header>
+            <main>
+                <form id="registerForm">
+                    <input type="text" id="clientName" placeholder="Nome" required>
+                    <input type="email" id="clientEmail" placeholder="Email" required>
+                    <input type="password" id="clientPassword" placeholder="Senha" required>
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </main>
+        </div>
+
+        <!-- Tela de Login do Administrador -->
+        <div id="adminLoginScreen" class="hidden">
+            <header>
+                <h1>Login de Administrador</h1>
+                <button id="backToInitialBtnAdmin">Voltar</button>
+            </header>
+            <main>
+                <form id="adminLoginForm">
+                    <input type="text" id="adminUser" placeholder="Usuário" required>
+                    <input type="password" id="adminPassword" placeholder="Senha" required>
+                    <button type="submit">Entrar</button>
+                </form>
+            </main>
+        </div>
+
+        <!-- Tela do Cliente -->
+        <div id="clientScreen" class="hidden">
+            <header>
+                <h1>Lista de Compras - Cliente</h1>
+                <button id="logoutClient">Sair</button>
+            </header>
+            <main>
+                <section class="add-item">
+                    <h2>Adicionar Item</h2>
+                    <form id="addItemForm">
+                        <input type="text" id="itemName" placeholder="Nome do item" required>
+                        <input type="number" id="itemQuantity" placeholder="Quantidade" required>
+                        <select id="itemCategory" required>
+                            <option value="frutas">Frutas</option>
+                            <option value="vegetais">Vegetais</option>
+                            <option value="laticínios">Laticínios</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                        <button type="submit">Adicionar</button>
+                    </form>
+                </section>
+                <section class="shopping-list">
+                    <h2>Lista de Compras</h2>
+                    <ul id="shoppingList">
+                        <!-- Itens serão adicionados aqui -->
+                    </ul>
+                    <button id="saveListBtn">Salvar Lista</button>
+                    <button id="viewHistoryBtn">Ver Histórico</button>
+                    <button id="shareListBtn">Compartilhar Lista</button>
+                </section>
+            </main>
+        </div>
+
+        <!-- Tela do Administrador -->
+        <div id="adminScreen" class="hidden">
+            <header>
+                <h1>Administração da Lista de Compras</h1>
+                <button id="logoutAdmin">Sair</button>
+            </header>
+            <main>
+                <p>Funcionalidades administrativas irão aqui...</p>
+            </main>
+        </div>
+
+        <!-- Tela de Histórico de Compras -->
+        <div id="historyScreen" class="hidden">
+            <header>
+                <h1>Histórico de Compras</h1>
+                <button id="backToClientBtn">Voltar</button>
+            </header>
+            <main>
+                <section class="history-list">
+                    <ul id="historyList">
+                        <!-- Históricos serão adicionados aqui -->
+                    </ul>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="Teste_Rodrigo_JavaScript.js"></script>
+</body>
+</html>

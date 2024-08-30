@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.add-item {
+    margin-bottom: 20px;
+}
+
+.add-item form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.add-item input, .add-item select, .add-item button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.shopping-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.shopping-list li {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shopping-list li button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.shopping-list li button:hover {
+    background-color: #c0392b;
+}
+
+.shopping-list li .editButton {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.shopping-list li .editButton:hover {
+    background-color: #2980b9;
+}
+
+.history-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.history-list li {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+form input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 16px;
+}

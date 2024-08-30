@@ -1,0 +1,148 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Garante que o corpo ocupe toda a altura da janela */
+    background-color: #e8f5e9; /* Cor de fundo suave que remete a frescor e limpeza */
+    padding: 20px; /* Garante espaçamento ao redor da tela central */
+}
+
+.container {
+    background-color: white; /* Cor de fundo do container */
+    padding: 30px; /* Espaçamento interno */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada para destacar */
+    border-radius: 12px; /* Bordas arredondadas mais suaves */
+    max-width: 800px; /* Limita a largura máxima do container */
+    width: 100%; /* Garante que ocupe toda a largura disponível */
+}
+
+header {
+    margin-bottom: 30px; /* Espaço abaixo do cabeçalho */
+    text-align: center; /* Centraliza o texto do cabeçalho */
+    font-size: 24px; /* Aumenta o tamanho da fonte do cabeçalho */
+    color: #388e3c; /* Cor verde para o cabeçalho, que remete a temas naturais */
+}
+
+button {
+    margin-right: 10px; /* Espaço entre os botões */
+    padding: 10px 20px; /* Aumenta o espaçamento interno dos botões */
+    font-size: 16px; /* Aumenta o tamanho da fonte dos botões */
+    border-radius: 5px; /* Bordas arredondadas dos botões */
+    background-color: #66bb6a; /* Cor de fundo dos botões, verde suave */
+    color: white; /* Cor do texto dos botões */
+    border: none; /* Remove a borda padrão */
+    cursor: pointer; /* Muda o cursor para pointer ao passar por cima */
+}
+
+button:hover {
+    background-color: #388e3c; /* Cor de fundo dos botões ao passar o mouse */
+}
+
+/* Estilos para .menu-navegacao e .menu-link permanecem os mesmos */
+
+/* Estilizações para ícones */
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 20px; /* Espaço entre os ícones */
+    transition: transform 0.3s ease;
+}
+
+/* Estilizações para imagens de ícones */
+.icon img {
+    width: 80px; /* Tamanho maior dos ícones */
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Torna as transições suaves */
+    border-radius: 10px; /* Arredonda os cantos do ícone */
+}
+
+/* Estilizações para o texto abaixo do ícone */
+.icon p {
+    margin-top: 12px; /* Mais espaço acima do texto */
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    color: #555; /* Cor neutra para o texto */
+    transition: color 0.3s ease; /* Transição suave para a cor */
+}
+
+/* Efeito de hover para as imagens de ícones */
+.icon:hover img {
+    transform: translateY(-10px) scale(1.1); /* Move o ícone para cima e aumenta seu tamanho */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Sombra mais forte no hover */
+}
+
+/* Efeito de hover para o texto abaixo dos ícones */
+.icon:hover p {
+    color: #2e7d32; /* Cor verde escuro para o texto ao passar o mouse */
+}
+
+.produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px; /* Espaço entre os produtos */
+    justify-content: center;
+}
+
+.produto {
+    flex: 1 1 250px; /* Aumenta a largura mínima dos produtos */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra leve para cada produto */
+    margin: 20px; /* Espaçamento ao redor de cada produto */
+    padding: 20px; /* Espaçamento interno dos produtos */
+    border-radius: 10px; /* Bordas arredondadas dos produtos */
+    background-color: #ffffff; /* Fundo branco para os produtos */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+}
+
+.produto:hover {
+    transform: translateY(-5px); /* Eleva ligeiramente o produto ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Sombra mais pronunciada no hover */
+}
+
+.produto-imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Arredonda as imagens dos produtos */
+}
+
+button.botao-compra {
+    background-color: #007bff; /* Cor de fundo do botão */
+    border-color: #007bff; /* Cor da borda do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 15px; /* Espaçamento interno dos botões de compra */
+    border-radius: 5px; /* Bordas arredondadas dos botões de compra */
+    font-size: 16px; /* Tamanho da fonte dos botões */
+    cursor: pointer; /* Cursor de pointer */
+}
+
+button.botao-compra:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+    border-color: #0056b3; /* Cor da borda do botão ao passar o mouse */
+}
+
+/* Estilizações para imagens de ícones */
+.icone-produtos img {
+    width: 120px; /* Define a largura desejada */
+    height: 120px; /* Define a altura desejada */
+    border-radius: 50%; /* Torna a imagem circular */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem perder a proporção */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+}
+
+/* Efeito de hover para as imagens de ícones */
+.icone-produtos:hover img {
+    transform: translateY(-10px) scale(1.1); /* Move o ícone para cima e aumenta seu tamanho */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Adiciona uma sombra mais forte no hover */
+}
+
+/* Estilizações para o texto abaixo do ícone */
+.icone-produtos p {
+    margin-top: 12px; /* Aumenta a margem para dar mais espaço */
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    color: #555; /* Escurece um pouco a cor para melhor legibilidade */
+    transition: color 0.3s ease; /* Torna a transição da cor suave */
+}
+
+.icone-produtos:hover p {
+    color: #2e7d32; /* Altera a cor do texto ao passar o mouse */
+}
